@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    margin: auto;
+    max-width: 60rem;
+    color: #d8edea;
+    background: radial-gradient(
+        circle,
+        rgba(175, 196, 174,1) 0%,
+        rgba(104,204,191,1) 89%,
+        rgba(94,191,178,1)100%
+    ) ;
+}
+
+header {
+    margin: 1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    div{
+        margin-right: 2rem;
+        height: 4rem;
+        width: 4rem;
+        img {
+            height: 100%;
+            width:100%;
+        }
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.text-area {
+    margin:0.5rem;
+    padding:0.5rem;
+    @media (max-width:600px) {
+        width:95vw;
+    }
+    font-family: "Montserrat", sans-serif;
+    color:#276873;
+    background-color: azure;
+    border-radius: 0.5rem;
+    border: 1px solid #276873;
+    
+}
+
+.buttons-encriptar {
+    @media (max-width:600px) {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.btn {
+    margin:1rem;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1rem;
+	font-weight:bold;
+	padding:0.5rem 0.5rem;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer {
+    margin-top:1rem;
+    text-align: center;
+    div {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        div {
+            width: 2rem;
+            height: 2rem;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.main-wrapper {
+    @media (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+span {
+    font-size: 0.5rem;
+    color: black;
+}
+
+

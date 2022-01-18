@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Te re encripto App!</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="logo-container">
+                <img src="./img/logo.png" alt="logo">
+            </div>            
+            <h1>Encriptador / Desencriptador</h1>
+        </header>
+        <div class="main-wrapper">
+            
+            <div class="text-wrapper">
+                <textarea name="texto-a-encriptar" class="text-area" id="texto-encriptar" cols="70" rows="10" placeholder="Escribí o pegá el texto acá...(solo minúsculas y sin acento)"></textarea>
+                <div class="buttons-encriptar">
+                    
+                    <button class="btn" id="encriptar">Encriptar</button>
+                    <button class="btn" id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div class="text-wrapper">
+                <textarea name="resultado" class="text-area" id="resultado" cols="70" rows="10" placeholder="El resultado se verá acá."></textarea>
+                <button class="btn btn-copiar" id="copiar">Copiar</button>
+            </div>            
+        </div>
+        <footer>
+            <h6>Code by Pablo Bari</h6>
+            <div>
+                <div class="img-git">
+                    <a href="https://github.com/pablilloab" target="_blank"><img src="./img/github logo.png" alt="logo-git"></a>               
+                </div>
+                <div class="img-link">
+                    <a href="https://www.linkedin.com/in/pablo-bari-20b9a1214/" target="_blank"><img src="./img/linkedin logo.png" alt="logo-lin"></a>               
+                </div>
+            </div>
+            
+            
+        </footer>
+    </main>
+    <script src="js/encriptar.js"></script>
+    <script src="js/copiar.js"></script>
+    <script src="js/desencriptar.js"></script>
+</body>
+</html>
