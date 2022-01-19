@@ -10,6 +10,22 @@ textarea {
   resize: none;
 }
 
+.error::-webkit-input-placeholder {
+  color: red;
+}
+
+.error:-ms-input-placeholder {
+  color: red;
+}
+
+.error::-ms-input-placeholder {
+  color: red;
+}
+
+.error::placeholder {
+  color: red;
+}
+
 html {
   scroll-behavior: smooth;
 }

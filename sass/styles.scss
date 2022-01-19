@@ -9,6 +9,10 @@ textarea {
     resize: none;
 }
 
+.error::placeholder {
+    color: red;
+} 
+
 html {
     scroll-behavior: smooth;
 }

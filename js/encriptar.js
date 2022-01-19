@@ -1,26 +1,26 @@
 //Archivo que encripta el texto ingresado por el usuario.
 
-//Objeto con claves
-
-const claves = {
-    "e":"enter",
-    "i":"imes",
-    "a":"ai",
-    "o":"ober",
-    "u":"ufat"
-};
-
-
 //Capturo texto ingresado por el usuario para encriptar
 let botonEncriptar = document.querySelector("#encriptar");
 
 botonEncriptar.addEventListener("click", () => {
-
-    let textoUsuario = document.querySelector("#texto-encriptar").value;
-    let textoEncriptado = encriptar(textoUsuario);   
+    let textArea = document.querySelector("#texto-encriptar");
+    let textoUsuario = textArea.value;
+    textArea.classList.remove("error");
     
-    let resultado = document.querySelector("#resultado");
-    resultado.value = textoEncriptado;
+
+    //controlo que el texto solo tenga minúsculas y sin signos ni acentos.
+    if (validarTexto (textoUsuario) == false) {
+        //encriptado
+        let textoEncriptado = encriptar(textoUsuario);
+        let resultado = document.querySelector("#resultado");
+        resultado.value = textoEncriptado;
+    } else {        
+        textArea.value = "";
+        textArea.classList.add("error");
+        textArea.placeholder = "Recordá que solo se admiten minúsculas sin acentos."
+
+    }
                
 })
 
